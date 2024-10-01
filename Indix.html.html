@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INEB-D</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e5f5; /* Fondo suave morado */
+            color: #333;
+        }
+        header {
+            background-color: #6a1b9a; /* Fondo morado oscuro */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco para el contenedor */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #6a1b9a; /* Borde morado oscuro alrededor de la imagen */
+        }
+        .comments, .post-form, .posts {
+            margin-top: 30px;
+        }
+        .post-form textarea, .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #6a1b9a; /* Borde morado */
+            border-radius: 4px;
+        }
+        .post-form button, .comment-form button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #8e24aa; /* Botón morado más claro */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .post-form button:hover, .comment-form button:hover {
+            background-color: #4a148c; /* Cambia a un tono más oscuro al pasar el ratón */
+        }
+        .comment-box, .post-box {
+            padding: 10px;
+            background-color: #ede7f6; /* Fondo morado suave para comentarios y publicaciones */
+            margin-bottom: 10px;
+            border: 1px solid #d1c4e9; /* Borde morado suave */
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #6a1b9a; /* Pie de página morado oscuro */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenidos a Mi Página, INEB-D</h1>
+        <nav>
+            <ul>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#publicaciones">Publicaciones</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        .gallery img {
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Sección de Galería -->
+        <section id="images" class="gallery">
+            <h2>Galería</h2>
+            
+            <!-- Asegúrate de que las imágenes están en la carpeta "images" dentro de tu proyecto -->
+            <img src="images/foto3.jpg.jpeg" width="350px" height="250px">
+            <img src="images/foto1.jpg.jpeg" width="350px" height="250px">
+            <img src="images/foto2.jpg.jpeg" width="350px" height="250px">
+            <img src="images/foto4.jpg.jpeg" width="350px" height="250px">
+            <img src="images/foto5.jpg.jpeg" width="350px" height="250px">
+            <img src="images/foto6.jpg.jpeg" width="350px" height="250px">
+        </section>
+    </div>
+
+</body>
+</html>
+
+
+        <!-- Sección de Publicaciones -->
+        <section id="publicaciones" class="posts">
+            <h2>Publicaciones</h2>
+            <div class="post-form">
+                <textarea id="postText" placeholder="Escribe tu publicación aquí..."></textarea>
+                <button onclick="agregarPublicacion()">Publicar</button>
+            </div>
+
+            <!-- Publicaciones agregadas dinámicamente -->
+            <div id="postsContainer">
+                <div class="post-box">
+                    <p><strong>Emily:</strong> Vive sin miedos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Comentarios -->
+        <section id="comentarios" class="comments">
+            <h2>Comentarios</h2>
+            <div class="comment-form">
+                <textarea id="commentText" placeholder="Escribe tu comentario aquí..."></textarea>
+                <button onclick="agregarComentario()">Comentar</button>
+            </div>
+
+            <!-- Comentarios agregados dinámicamente -->
+            <div id="commentsContainer">
+                <div class="comment-box">
+                    <p><strong>Janeth:</strong> ¡Holis, es un gusto tenerte aca!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <!-- Coloca tus enlaces de redes sociales aquí -->
+        <a href="https://www.facebook.com/share/PsTR849Dju6Qde1V/?mibextid=qi2Omg" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/tuUsuario" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/alquijayjaneth?igsh=MWZxeG0yZnpvN2Rm" target="_blank">Instagram</a>
+    </footer>
+
+    <script>
+        function agregarPublicacion() {
+            var texto = document.getElementById("postText").value;
+            if (texto.trim() === "") {
+                alert("El campo de publicación está vacío.");
+                return;
+            }
+            var nuevoPost = document.createElement("div");
+            nuevoPost.className = "post-box";
+            nuevoPost.innerHTML = "<p><strong>Usuario:</strong> " + texto + "</p>";
+            document.getElementById("postsContainer").appendChild(nuevoPost);
+            document.getElementById("postText").value = ""; // Limpiar el campo
+        }
+
+        function agregarComentario() {
+            var texto = document.getElementById("commentText").value;
+            if (texto.trim() === "") {
+                alert("El campo de comentario está vacío.");
+                return;
+            }
+            var nuevoComentario = document.createElement("div");
+            nuevoComentario.className = "comment-box";
+            nuevoComentario.innerHTML = "<p><strong>Usuario:</strong> " + texto + "</p>";
+            document.getElementById("commentsContainer").appendChild(nuevoComentario);
+            document.getElementById("commentText").value = ""; // Limpiar el campo
+        } 
+    <style>
+        body 
+            background-image: url('images/foto1.jpeg');
+            background-size: background;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin:0;
+            font-family: Arial, sans-serif;
+        []
+    </style>
+</body>
+</html>
+
